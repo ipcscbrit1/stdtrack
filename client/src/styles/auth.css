@@ -1,0 +1,78 @@
+:root {
+  --bg-color: #f5eedd;
+  --accent-color: #7ae2cf;
+  --primary-color: #077a7d;
+  --dark-color: #06202b;
+}
+
+/* Page Background */
+.register-page {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Register Card */
+.register-card {
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 20px rgba(7, 122, 125, 0.2);
+}
+
+/* Headings */
+.register-card h3 {
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Form Inputs */
+.register-card .form-control {
+  border: 1px solid var(--accent-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-card .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(7, 122, 125, 0.3);
+}
+
+/* Submit Button */
+.register-card .btn-submit {
+  background-color: var(--primary-color);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.register-card .btn-submit:hover {
+  background-color: var(--dark-color);
+  color: var(--accent-color);
+}
+
+/* Alerts */
+.register-card .alert {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Login Link */
+.register-card .login-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-card .login-link:hover {
+  color: var(--dark-color);
+}
