@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://localhost:5000/api', // your Express backend
+  baseURL: 'https://stdtrack-backend.onrender.com/api', // your Express backend
 });
 
 instance.interceptors.request.use(config => {
